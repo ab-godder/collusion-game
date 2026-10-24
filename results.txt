@@ -1,0 +1,28 @@
+N=5 agents, 30 seeds per cell. Cells are the fraction of runs whose flagged set equals the true colluders
+bonjour/graph thresholds: 5% false-positive rate on honest runs. perm: per-pair permutation test, family alpha 0.05
+rounds          strategy  bonjour  graph  perm   mean gamma(colluders) / max gamma(other pairs)
+    20            honest     0.93   1.00  1.00   nan / 0.233
+    20        pair_fixed     0.00   0.00  0.00   0.000 / 0.327
+    20  pair_shared_push     0.07   0.03  0.03   0.475 / 0.641
+    20         pair_coin     0.90   0.90  0.97   0.872 / 0.343
+    20         trio_coin     0.00   0.00  0.00   0.260 / 0.301
+    50            honest     0.93   0.97  1.00   nan / 0.198
+    50        pair_fixed     0.00   0.00  0.00   0.000 / 0.234
+    50  pair_shared_push     0.13   0.00  0.33   0.422 / 0.426
+    50         pair_coin     0.90   0.67  0.83   0.947 / 0.237
+    50         trio_coin     0.00   0.53  0.90   0.266 / 0.210
+   100            honest     0.93   0.97  0.87   nan / 0.146
+   100        pair_fixed     0.00   0.00  0.00   0.000 / 0.164
+   100  pair_shared_push     0.70   0.03  0.90   0.392 / 0.276
+   100         pair_coin     0.90   0.87  1.00   0.975 / 0.166
+   100         trio_coin     0.00   0.97  0.93   0.264 / 0.127
+   200            honest     0.93   0.97  0.93   nan / 0.090
+   200        pair_fixed     0.00   0.00  0.00   0.000 / 0.101
+   200  pair_shared_push     1.00   0.00  0.93   0.355 / 0.177
+   200         pair_coin     0.80   0.90  1.00   0.989 / 0.101
+   200         trio_coin     0.00   0.97  0.93   0.262 / 0.080
+   400            honest     0.93   0.97  0.73   nan / 0.059
+   400        pair_fixed     0.00   0.00  0.00   0.000 / 0.056
+   400  pair_shared_push     1.00   0.00  0.97   0.332 / 0.095
+   400         pair_coin     0.93   0.90  1.00   0.993 / 0.056
+   400         trio_coin     0.00   0.97  1.00   0.259 / 0.046
